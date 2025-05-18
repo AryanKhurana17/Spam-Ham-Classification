@@ -25,7 +25,7 @@ The dataset contains email messages labeled as 'spam' or 'ham' with two columns:
 
 3. **Modeling**  
    - Multinomial Naive Bayes for BoW and TF-IDF features  
-   - Logistic Regression using Word2Vec averaged embeddings  
+   - Logicstic Regression using Word2Vec averaged embeddings  
 
 4. **Evaluation**  
    - Accuracy, Precision, Recall, and F1-score metrics  
@@ -33,6 +33,9 @@ The dataset contains email messages labeled as 'spam' or 'ham' with two columns:
 
 ## Results
 - Achieved approximately **97% accuracy** with the Word2Vec + Logistic Regression model, outperforming traditional BoW and TF-IDF models.
+
+## Key Insight:
+- **BoW > TF-IDF** in this case because spam messages often repeat certain keywords (e.g., "free", "win", "money"), and BoW emphasizes frequency more directly than TF-IDF.
 
 ## Tools and Libraries
 - Python 3.x  
